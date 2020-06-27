@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     
-    'erpe.apps.ErpeConfig',
+    
     'erp.apps.ErpConfig',
     'django.contrib.admin',
     'django.contrib.auth',

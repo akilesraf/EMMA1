@@ -21,7 +21,7 @@ urlpatterns = [
     path('erp/', include('erp.urls')),
     path('admin/', admin.site.urls),
     path('', include('erp.urls')),
-    path('', include('erpe.urls')),
+    
    
    
 ]

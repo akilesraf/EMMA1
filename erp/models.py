@@ -28,18 +28,10 @@ class Informes(models.Model):
     clientes = models.ForeignKey(Clientes, on_delete=models.CASCADE)
     informes_text = models.CharField(max_length=200)
     Monto_Pesos = models.IntegerField(default=0)
-    Monto_Dolares= models.IntegerField(default=0)
-    Deposito =models.BooleanField(null=True)
-    Guiro = models.BooleanField(null=True)
-    Banco = models.CharField(max_length = 80)
     Persona_o_entidad= models.CharField(max_length = 80)
     Recivido =  models.BooleanField(null=True)
     Enviado = models.BooleanField(null=True)
-    Pagos_web =  models.BooleanField(null=True)
-    simulador_Credito = models.IntegerField(default=0)
-    Monto_Total_credito = models.IntegerField(default=0)
-    Cuotas_Credito = models.IntegerField(default=0)
-    Sueldo = models.IntegerField(default=0)
+    Saldo_Total = models.IntegerField(default=0)
 
    
     def __str__(self):
